@@ -24,6 +24,18 @@
 				<img class = "newappIcon" src='images/Me.jpg'>
 			</td>
 		</tr>
+		<tr>
+			<td>
+				<script>
+				/*globals mapboxgl */
+				mapboxgl.accessToken = 'pk.eyJ1IjoibXN0b2tlczQ0IiwiYSI6ImNpd3F3Znd4ejAwMWYyc3F0bHd3aWRiZGgifQ.-t2ID0AzHnicAgUgOTLpWw';
+				var map = new mapboxgl.Map({
+    			container: 'map',
+    			style: 'mapbox://styles/mapbox/streets-v9'
+				});
+				</script>
+			</td>
+		</tr>
 	</table>
 	<!-- Call SimpleServlet to get the "Hello World" message  -->
 	<script type="text/javascript" src="index.js"></script>
