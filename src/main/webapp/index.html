@@ -4,6 +4,9 @@
 	<title>Java Web Starter Application</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="style.css" />
+	<script src='https://api.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.css' rel='stylesheet' />
+          
 </head>
 <body>
 	<table>
@@ -24,5 +27,15 @@
 	</table>
 	<!-- Call SimpleServlet to get the "Hello World" message  -->
 	<script type="text/javascript" src="index.js"></script>
+	<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+/*globals mapboxgl */
+mapboxgl.accessToken = 'pk.eyJ1IjoibXN0b2tlczQ0IiwiYSI6ImNpd3F3Znd4ejAwMWYyc3F0bHd3aWRiZGgifQ.-t2ID0AzHnicAgUgOTLpWw';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9'
+});
+</script>
+          
 </body>
 </html>
